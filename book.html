@@ -1,1 +1,91 @@
-/*도서 목록과 정보*/
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>도서 리뷰 - 문화생활 기록장</title>
+    <!-- css 폴더 안에 만든 book.css 연결 -->
+    <link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+    <!-- 1. 상단 제목 영역 -->
+    <header id="main-header">
+        <h1>📚 문화생활 기록장</h1>
+        <p>인상 깊게 읽은 도서의 줄거리, 평점, 솔직한 리뷰를 모아보는 공간</p>
+    </header>
+
+    <!-- 2. 상단 네비게이션 메뉴 (4개 페이지 이동) -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">🏠 홈</a></li>
+            <li class="select"><a href="book.html">📖 도서</a></li>
+            <li><a href="movie.html">🎬 영화</a></li>
+            <li><a href="review.html">✏️ 리뷰 작성</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. 본문 도서 목록 영역 -->
+    <section id="content-section">
+        <div class="section-top">
+            <h2>📖 도서 목록 & 리뷰</h2>
+            <!-- 리뷰 작성 페이지로 바로 넘어가는 버튼 -->
+            <a href="review.html" class="write-btn">+ 새 리뷰 작성하기</a>
+        </div>
+
+        <!-- 작품 카드들이 나열되는 공간 (나중에 js 연동 시 id="book-list" 활용 가능) -->
+        <div id="book-list">
+
+            <!-- ===== [도서 1] 시작 ===== -->
+            <article class="book-card">
+                <div class="poster-box">
+                    <img src="images/book1.jpg" alt="도서 1 표지">
+                </div>
+                <div class="info-box">
+                    <h3>달러구트 꿈 백화점</h3>
+                    <p class="meta">저자: 이미예 | 장르: 판타지 소설</p>
+                    <p class="rating">★ ★ ★ ★ ☆ <span>(4.5 / 5.0)</span></p>
+                    
+                    <div class="plot-box">
+                        <strong>줄거리</strong>
+                        <p>잠들어야만 입장할 수 있는 신비한 백화점에서 다양한 사람들의 꿈을 사고파는 이야기를 담은 따뜻한 판타지 소설입니다.</p>
+                    </div>
+
+                    <div class="review-box">
+                        <strong>리뷰</strong>
+                        <p>지친 하루 끝에 가볍고 포근하게 읽기 좋은 책이었습니다. 잠들기 전 매일 밤 꿈을 고른다는 상상력이 매력적이라 누구에게나 추천하고 싶습니다.</p>
+                    </div>
+                </div>
+            </article>
+            <!-- ===== [도서 1] 끝 ===== -->
+
+            <!-- ===== [도서 2] 시작 ===== -->
+            <article class="book-card">
+                <div class="poster-box">
+                    <img src="images/book2.jpg" alt="도서 2 표지">
+                </div>
+                <div class="info-box">
+                    <h3>불편한 편의점</h3>
+                    <p class="meta">저자: 김호연 | 장르: 현대 소설</p>
+                    <p class="rating">★ ★ ★ ★ ★ <span>(5.0 / 5.0)</span></p>
+
+                    <div class="plot-box">
+                        <strong>줄거리</strong>
+                        <p>서울역 노숙인이었던 '독고'가 우연한 계기로 청파동의 작은 편의점 야간 알바로 일하게 되면서 손님들과 이웃들에게 따뜻한 위로를 전하는 이야기입니다.</p>
+                    </div>
+
+                    <div class="review-box">
+                        <strong>리뷰</strong>
+                        <p>우리 주변에서 흔히 볼 수 있는 평범한 사람들의 고민을 담백하게 풀어내어 공감이 많이 갔습니다. 읽고 나면 마음이 한결 따뜻해지는 작품입니다.</p>
+                    </div>
+                </div>
+            </article>
+            <!-- ===== [도서 2] 끝 ===== -->
+
+        </div>
+    </section>
+
+    <!-- 4. 하단 푸터 영역 -->
+    <footer id="main-footer">
+        <span>한양대학교 ERICA 오픈소스개발과활용 팀 프로젝트</span>
+    </footer>
+</body>
+</html>

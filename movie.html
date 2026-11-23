@@ -1,1 +1,90 @@
-/*영화 목록과 정보*/
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>영화 리뷰 - 문화생활 기록장</title>
+    <!-- 영화 전용 CSS 연결 -->
+    <link rel="stylesheet" href="css/movie.css">
+</head>
+<body>
+    <!-- 1. 상단 제목 영역 -->
+    <header id="main-header">
+        <h1>🎬 문화생활 기록장</h1>
+        <p>인상 깊게 본 영화의 줄거리, 평점, 솔직한 리뷰를 모아보는 공간</p>
+    </header>
+
+    <!-- 2. 상단 네비게이션 메뉴 (영화 탭에 select 적용) -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">🏠 홈</a></li>
+            <li><a href="book.html">📖 도서</a></li>
+            <li class="select"><a href="movie.html">🎬 영화</a></li>
+            <li><a href="review.html">✏️ 리뷰 작성</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. 본문 영화 목록 영역 -->
+    <section id="content-section">
+        <div class="section-top">
+            <h2>🎬 영화 목록 & 리뷰</h2>
+            <a href="review.html" class="write-btn">+ 새 리뷰 작성하기</a>
+        </div>
+
+        <!-- 영화 카드 목록 영역 -->
+        <div id="movie-list">
+
+            <!-- ===== [영화 1] 시작 ===== -->
+            <article class="movie-card">
+                <div class="poster-box">
+                    <img src="images/movie1.jpg" alt="인터스텔라 포스터">
+                </div>
+                <div class="info-box">
+                    <h3>인터스텔라</h3>
+                    <p class="meta">감독: 크리스토퍼 놀란 | 장르: SF / 드라마</p>
+                    <p class="rating">★ ★ ★ ★ ★ <span>(5.0 / 5.0)</span></p>
+                    
+                    <div class="plot-box">
+                        <strong>줄거리</strong>
+                        <p>황폐해진 지구를 떠나 인류가 살아갈 새로운 행성을 찾기 위해 우주로 떠난 탐사대와, 지구에 남은 가족 사이의 시간을 초월한 여정을 그린 SF 영화입니다.</p>
+                    </div>
+
+                    <div class="review-box">
+                        <strong>리뷰</strong>
+                        <p>압도적인 우주 영상미와 한스 짐머의 웅장한 배경음악이 완벽하게 어우러집니다. 과학적 상상력과 가족애를 동시에 담아내어 몇 번을 다시 봐도 여운이 깊게 남는 작품입니다.</p>
+                    </div>
+                </div>
+            </article>
+            <!-- ===== [영화 1] 끝 ===== -->
+
+            <!-- ===== [영화 2] 시작 ===== -->
+            <article class="movie-card">
+                <div class="poster-box">
+                    <img src="images/movie2.jpg" alt="기생충 포스터">
+                </div>
+                <div class="info-box">
+                    <h3>기생충</h3>
+                    <p class="meta">감독: 봉준호 | 장르: 드라마 / 스릴러</p>
+                    <p class="rating">★ ★ ★ ★ ☆ <span>(4.5 / 5.0)</span></p>
+
+                    <div class="plot-box">
+                        <strong>줄거리</strong>
+                        <p>전원 백수로 살아가던 기택네 가족이 장남 기우의 고액 과외 면접을 계기로 부유한 박 사장네 집에 하나둘 발을 들이면서 걷잡을 수 없는 사건에 휘말리는 이야기입니다.</p>
+                    </div>
+
+                    <div class="review-box">
+                        <strong>리뷰</strong>
+                        <p>초반의 유쾌한 블랙 코미디가 후반으로 갈수록 긴장감 넘치는 스릴러로 전환되는 연출이 탁월합니다. 공간과 계단을 활용한 상징적인 장면들이 많아 끝나고 나서도 계속 생각하게 됩니다.</p>
+                    </div>
+                </div>
+            </article>
+            <!-- ===== [영화 2] 끝 ===== -->
+
+        </div>
+    </section>
+
+    <!-- 4. 하단 푸터 영역 -->
+    <footer id="main-footer">
+        <span>한양대학교 ERICA 오픈소스개발과활용 팀 프로젝트</span>
+    </footer>
+</body>
+</html>
