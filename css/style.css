@@ -279,3 +279,293 @@ footer {
     text-align: center;
     color: #56845b;
 }
+/* 1. 기본 여백 및 폰트 초기화 (book.css, movie.css와 통일) */
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+
+body {
+    background-color: #f6f4ef;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 2. 상단 헤더 & 네비게이션 (960px 기준 중앙 정렬) */
+header {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 22px 30px;
+    background-color: #2c2624;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    padding: 8px 16px;
+    color: #e2dad2;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background-color: #7a5c43;
+    color: #ffffff;
+}
+
+/* 현재 Home 메뉴 강조 */
+nav a:first-child {
+    background-color: #7a5c43;
+    color: #ffffff;
+}
+
+/* 3. 메인 영역 컨테이너 */
+main {
+    max-width: 960px;
+    margin: 30px auto;
+}
+
+/* 4. 메인 소개 (Hero 섹션) */
+.hero {
+    background-color: #ffffff;
+    border: 1px solid #e2dbd2;
+    border-radius: 12px;
+    padding: 55px 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.subtitle {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #7a5c43;
+    background-color: #f4efe9;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #2c241f;
+    line-height: 1.35;
+    margin-bottom: 16px;
+}
+
+.hero h1 span {
+    color: #7a5c43;
+}
+
+.description {
+    font-size: 15px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #3b312b;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.start-button:hover {
+    background-color: #7a5c43;
+    transform: translateY(-2px);
+}
+
+/* 5. 메뉴 카드 섹션 (Explore Archive) */
+.menu-section {
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 24px;
+    color: #2c241f;
+    margin-bottom: 6px;
+}
+
+.section-description {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 28px;
+}
+
+.menu-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* 공통 카드 스타일 */
+.menu-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e2dbd2;
+    border-radius: 10px;
+    padding: 32px 20px;
+    text-decoration: none;
+    color: #333333;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 14px;
+}
+
+.menu-card h3 {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 22px;
+    flex: 1;
+}
+
+.menu-card span {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* 도서 카드: book.css 브라운 톤 연결 */
+.book-card {
+    border-top: 5px solid #7a5c43;
+}
+
+.book-card h3 {
+    color: #3b312b;
+}
+
+.book-card span {
+    background-color: #f4efe9;
+    color: #7a5c43;
+}
+
+.book-card:hover span {
+    background-color: #7a5c43;
+    color: #ffffff;
+}
+
+/* 영화 카드: movie.css 네이비 & 시네마 레드 톤 연결 */
+.movie-card {
+    border-top: 5px solid #b83227;
+}
+
+.movie-card h3 {
+    color: #1a2232;
+}
+
+.movie-card span {
+    background-color: #fdf0ef;
+    color: #b83227;
+}
+
+.movie-card:hover span {
+    background-color: #b83227;
+    color: #ffffff;
+}
+
+/* 리뷰 작성 카드: 공통 별점 골드 톤 연결 */
+.write-card {
+    border-top: 5px solid #e69d00;
+}
+
+.write-card h3 {
+    color: #5c4330;
+}
+
+.write-card span {
+    background-color: #fff8e6;
+    color: #b87b00;
+}
+
+.write-card:hover span {
+    background-color: #e69d00;
+    color: #ffffff;
+}
+
+/* 6. 하단 푸터 */
+footer {
+    max-width: 960px;
+    margin: 50px auto 0;
+    padding: 25px 0;
+    background-color: #e6dfd5;
+    color: #555555;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer p + p {
+    margin-top: 4px;
+    color: #777777;
+    font-size: 12px;
+}
+
+/* 7. 모바일/좁은 화면 대응 */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .hero {
+        margin: 0 15px 30px;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
