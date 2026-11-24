@@ -1,19 +1,91 @@
-/*홈페이지 첫 화면, 추천 작품*/
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culture Archive</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Culture Archive</h1>
-    <p>영화와 책을 감상하고 리뷰를 공유하는 공간</p>
+    <!-- 상단 메뉴 -->
+    <header>
+        <div class="logo">Culture Archive.</div>
 
-    <h2>추천 작품</h2>
-    <p>영화와 책을 소개합니다.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="book.html">Books</a>
+            <a href="movie.html">Movies</a>
+            <a href="write.html">Write</a>
+        </nav>
+    </header>
 
-    <script src="script.js"></script>
+    <!-- 메인 소개 -->
+    <main>
+        <section class="hero">
+            <p class="subtitle">OUR CULTURE, OUR STORIES</p>
+
+            <h1>
+                당신의 감상을<br>
+                <span>기록하고 공유하세요.</span>
+            </h1>
+
+            <p class="description">
+                영화와 책을 감상하고,<br>
+                그 순간의 생각과 감정을 다른 사람들과 나누는 공간입니다.
+            </p>
+
+            <a href="write.html" class="start-button">
+                나의 리뷰 작성하기 →
+            </a>
+        </section>
+
+        <!-- 메뉴 카드 -->
+        <section class="menu-section">
+
+            <h2>Explore Archive</h2>
+            <p class="section-description">
+                어떤 이야기를 만나고 싶으신가요?
+            </p>
+
+            <div class="menu-container">
+
+                <!-- 도서 -->
+                <a href="book.html" class="menu-card book-card">
+                    <div class="card-icon">📚</div>
+                    <h3>BOOKS</h3>
+                    <p>책 속에 담긴 이야기와<br>다양한 감상평을 만나보세요.</p>
+                    <span>도서 둘러보기 →</span>
+                </a>
+
+                <!-- 영화 -->
+                <a href="movie.html" class="menu-card movie-card">
+                    <div class="card-icon">🎬</div>
+                    <h3>MOVIES</h3>
+                    <p>영화의 장면과 여운을<br>다른 사람들과 공유해 보세요.</p>
+                    <span>영화 둘러보기 →</span>
+                </a>
+
+                <!-- 신규 작성 -->
+                <a href="write.html" class="menu-card write-card">
+                    <div class="card-icon">✍️</div>
+                    <h3>NEW REVIEW</h3>
+                    <p>새로운 작품을 등록하고<br>나만의 리뷰를 작성해 보세요.</p>
+                    <span>리뷰 작성하기 →</span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 하단 -->
+    <footer>
+        <p>Culture Archive © 2026</p>
+        <p>Share your thoughts, remember your moments.</p>
+    </footer>
+
 </body>
 </html>
