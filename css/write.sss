@@ -1,0 +1,227 @@
+
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #f6f4ef;
+    color: #333333;
+}
+
+/* 1. 상단 제목 영역 */
+#main-header {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 35px 0;
+    background-color: #3b312b;
+    color: #ffffff;
+    text-align: center;
+}
+
+#main-header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+#main-header p {
+    font-size: 14px;
+    color: #dcd4cc;
+}
+
+/* 2. 네비게이션 */
+#main-nav {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #d8c8b8;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#main-nav li {
+    flex: 1;
+    text-align: center;
+}
+
+#main-nav a {
+    display: block;
+    padding: 15px 0;
+    color: #3b312b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#main-nav li.select {
+    background-color: #7a5c43;
+}
+
+#main-nav li.select a {
+    color: #ffffff;
+}
+
+#main-nav a:hover {
+    background-color: #c2ae9a;
+}
+
+/* 3. 본문 영역 */
+#content-section {
+    width: 960px;
+    max-width: 94%;
+    margin: 30px auto;
+}
+
+.section-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #7a5c43;
+}
+
+.section-top h2 {
+    font-size: 22px;
+    color: #3b312b;
+}
+
+/* 4. 입력 폼 */
+.form-container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    background-color: #ffffff;
+    border: 1px solid #e2dbd2;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h3 {
+    color: #3b312b;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #888888;
+    font-size: 13px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.form-section label {
+    display: block;
+    margin: 20px 0 8px;
+    color: #493c32;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dcd4cc;
+    border-radius: 6px;
+    background-color: #fcfbf9;
+    font-family: inherit;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+    border-color: #8c684c;
+    box-shadow: 0 0 0 3px rgba(140, 104, 76, 0.12);
+}
+
+.form-section textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.form-container hr {
+    border: none;
+    border-top: 1px solid #e8e1d9;
+    margin: 35px 0;
+}
+
+/* 5. 등록 버튼 */
+.submit-btn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #7a5c43;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #5c4330;
+}
+
+/* 등록 완료 메시지 */
+#message {
+    margin-top: 18px;
+    text-align: center;
+    color: #7a5c43;
+    font-weight: bold;
+}
+
+/* 6. 하단 영역 */
+#main-footer {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #3b312b;
+    color: #dcd4cc;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* 7. 모바일 대응 */
+@media (max-width: 700px) {
+    #main-header {
+        padding: 25px 10px;
+    }
+
+    #main-header h1 {
+        font-size: 24px;
+    }
+
+    #main-nav a {
+        font-size: 12px;
+        padding: 14px 2px;
+    }
+
+    #content-section {
+        max-width: 94%;
+    }
+
+    .form-container {
+        padding: 25px 18px;
+    }
+
+    .section-top h2 {
+        font-size: 19px;
+    }
+}
